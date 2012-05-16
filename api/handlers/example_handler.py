@@ -9,9 +9,9 @@ from api.utils import routes  # api.first
 
 
 @routes.route("/api/v1/example")
-class WorrkoutsHandler(web.RequestHandler, mixins.ResourceCreationMixin):
+class ExampleHandler(web.RequestHandler, mixins.ResourceCreationMixin):
     def post(self):
-        """Handles requests for new activity resources."""
+        """Handles requests for new Example resources instances."""
         request_data = self.request.to_dict()
         resource = self.create_resource(request_data)
         self.set_status(201)
