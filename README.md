@@ -20,5 +20,3 @@ On success a `201` code will be sent with a JSON response:
         "weekTotal": <integer - score for the week>,
         "monthTotal": <integer - score for the month>
     }
-
-
