@@ -5,8 +5,8 @@ import logging
 from tornado import ioloop
 from tornado import web
 
+import api.first
 from api.utils import routes
-from api.handlers import create_routes
 
 
 logging.basicConfig(filename="server.log", level=logging.DEBUG)
